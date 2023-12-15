@@ -1,10 +1,10 @@
 from aiogram import Router
 from aiogram import types
-import config
+import src.config
 
 from src.db_api.DbManipulator import DbManipulator
 from src.validator import Validator
-from config import all_msg_after_reg
+from src.config import all_msg_after_reg
 from src.bot import bot
 
 from src.ss_algorithm import assign_secret_santas

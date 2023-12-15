@@ -1,8 +1,8 @@
 import asyncio
 from aiogram import Dispatcher
-from router import router
-from router_after_reg import router_after_reg
-import config
+from src.router import router
+from src.router_after_reg import router_after_reg
+import src.config
 from src.bot import bot
 
 # Запуск бота

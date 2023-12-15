@@ -10,7 +10,7 @@ from src.config import (start_cmd_message, registration_msg, pib_reg_msg, phone_
                     negative_confirmation_msg, positive_confirmation_msg, cancel_cmd_msg, wishes_msg,
                     cancel_reg_cmd_msg)
 
-from states import RegistrationForm
+from src.states import RegistrationForm
 
 from src.db_api.DbManipulator import DbManipulator
 from src.validator import Validator
