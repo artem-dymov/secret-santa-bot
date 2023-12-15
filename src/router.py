@@ -28,7 +28,7 @@ async def cancel_cmd(message: types.Message, state: FSMContext):
 
 @router.message(Command('start'), StateFilter(None))
 async def cmd_start(message: types.Message):
-    await message.answer(text=start_cmd_message, reply_markup=start_agreement_kb)
+    await message.answer(text=start_cmd_message, reply_markup=start_agreement_kb, disable_web_page_preview=True)
 
 
 @router.callback_query(F.data == 'initial_agreement', StateFilter(None))

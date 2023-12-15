@@ -46,7 +46,7 @@ async def all_msg_handler(message: types.Message):
                                                        f'Адрес відділення Нової пошти або поштомату: '
                                                        f'{user_to_gift.nv_poshta_address}\n'
                                                        f'Індекс відділення Укрпошти: {user_to_gift.ukrposhta_index}\n'
-                                                       f'Ваші побажання: {user_to_gift.wishes}'
+                                                       f'Побажання: {user_to_gift.wishes}'
                     )
                 except Exception as e:
                     print(e)
@@ -57,7 +57,8 @@ async def all_msg_handler(message: types.Message):
 
                 try:
                     await bot.send_message(user.tg_id, f'Кінцева дата надсилання подарунків пройшла.\n'
-                                                       f'Оце собсна дані Вашого Санти, якщо він Вам нічого не прислав, то Ви знаєте кому начистити їбальничок\n\n'
+                                                       f'Дані людини, яка мала надіслати Вам подарунок нижче.\n'
+                                                       f'Просимо мати на увазі, що подарунок може бути ще в дорозі!\n\n'
                                                        f'ПІБ: {santa.pib}\n'
                                                        f'Номер телефону: {santa.phone_number}\n'
                                                        f'Адрес відділення Нової пошти або поштомату: '
