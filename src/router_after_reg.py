@@ -1,6 +1,6 @@
 from aiogram import Router
 from aiogram import types
-import src.config
+import src.config as config
 
 from src.db_api.DbManipulator import DbManipulator
 from src.validator import Validator
